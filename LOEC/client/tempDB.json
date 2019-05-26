@@ -1,0 +1,40 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "customername": "Dave",
+      "customerId": 1,
+      "customerEmail": "dave123@gmail.com",
+      "customerPhoneNumber": "210-555-555",
+      "initialContact": "Dave",
+      "followUpdate": "6-6-2006",
+      "employeeIDowner": 1
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employeeName": "roger",
+      "employeeID": 1,
+      "employeeEmail": "roger123@gmail.com",
+      "employeePhone": "210-666-6666",
+      "numberofCustomers": "1",
+      "dateofLastlogin": "6-6-2006"
+    },
+    {
+      "id": 2,
+      "employeeName": "steve",
+      "employeeID": 2,
+      "employeeEmail": "steveo@gmail.com",
+      "employeePhone": "333-642-9996",
+      "numberofCustomers": 0,
+      "dateofLastlogin": "5-29-2006"
+    },
+    {
+      "employeeName": "johnny",
+      "employeeEmail": "test1@test.com",
+      "employeePhone": "999-999-22222",
+      "id": 3
+    }
+  ]
+}

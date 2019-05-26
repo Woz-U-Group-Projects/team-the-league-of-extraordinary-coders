@@ -1,0 +1,21 @@
+<p>
+  employee-edit works!
+</p>
+<h2>Employee Edit</h2>
+Name: <input [(ngModel)]="editEmployee.employeeName">
+<br>
+Email: <input [(ngModel)]="editEmployee.employeeEmail">
+<br>
+Phone:
+<input [(ngModel)]="editEmployee.employeePhone">
+<br>
+Number of Customers:
+<input [(ngModel)]="editEmployee.numberofCustomers">
+<br>
+<!-- Necessary items needed to complete the task:
+<input [(ngModel)]="editEmployee.employee">
+<br> -->
+<button (click)="saveEmployee()">Save</button>
+
+
+<!-- <button (click)="addEmployee()">Add</button> -->
