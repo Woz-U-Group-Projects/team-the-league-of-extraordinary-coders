@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Employees Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Employees</h1>
+    <div th:if="${!employees.empty}">
+        <table>
+            <tr>
+                <th>Employee Id</th>
+                <th>Title</th>
+                <th>Employee Id</th>
+            </tr>
+            <tr th:each="employee : ${employee}">
+                <td th:text="${employee.employeeId}">Employee Id</td>
+                <td th:text="${employee.employeeTitle}">Title</td>
+                <td th:text="${employee.employeeEmployeeId}">employeeEmployee Id</td>
+            </tr>
+        </table>
+    </div>
+    <div th:if="${employees.empty}">
+        <h3>No employees found!</h3>
+    </div>
+</body>
+</html>
