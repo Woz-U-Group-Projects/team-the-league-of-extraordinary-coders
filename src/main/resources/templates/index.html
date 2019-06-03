@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>LOEC!</h1>
+
+<form action="#" th:action="@{/person}" th:object="${person}" method="post" >
+<input th:field="*{firstName}" placeholder="First Name" />
+<input th:field="*{lastName}" placeholder="Last Name" />
+<input th:field="*{age}" placeholder="Age" />
+<button >Submit</button>
+</form>
+
+<p>This page is the root view served when visiting <a href="/" >localhost:8080/</a></p>
+</body>
+</html>
