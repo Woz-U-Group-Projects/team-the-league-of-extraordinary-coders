@@ -1,0 +1,20 @@
+<h2>Employees: </h2>
+
+<ul>
+  <li *ngFor="let e of employeeList">
+    <a [routerLink]="['/employeeDetails', e.id]"> {{ e.employeeName }} </a>
+  </li>
+</ul>
+
+
+<h2>Employee List</h2>
+<ul>
+  <h5>Click employee to see detailed information</h5>
+  <li *ngFor="let e of employeeList">
+    <a [routerLink]="['/employeeDetails', e.id]">
+      {{e.employeeName}} has an ID of {{e.id}}
+    </a>
+    <button (click)="deleteEmployee(e.id)">x</button>
+    <a [routerLink]="['/employeeEdit', e.id]"><button>edit</button></a>
+  </li>
+</ul>
