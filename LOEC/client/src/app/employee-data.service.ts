@@ -8,7 +8,7 @@ import { Employees } from './employee-list/employeeModel';
 })
 export class EmployeeDataService {
 
-  employeesUrl = "http://localhost:3000/employees";
+  employeesUrl = "http://localhost:8080";
 
   getEmployees(): Observable<Employees[]> {
     return this.http.get<Employees[]>(this.employeesUrl);
