@@ -10,6 +10,10 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 import { NavComponent } from './nav/nav.component';
+import { ContactsListComponent } from './contacts-list/contacts-list.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactAddComponent } from './contact-add/contact-add.component';
+import { ContactEditComponent } from './contact-edit/contact-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { NavComponent } from './nav/nav.component';
     EmployeeDetailComponent,
     EmployeeAddComponent,
     EmployeeEditComponent,
-    NavComponent
+    NavComponent,
+    ContactsListComponent,
+    ContactDetailComponent,
+    ContactAddComponent,
+    ContactEditComponent
   ],
   imports: [
     BrowserModule,
