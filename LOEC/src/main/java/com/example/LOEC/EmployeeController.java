@@ -23,7 +23,7 @@ public class EmployeeController {
 	}
 	
 	
-	@GetMapping("/employees") // localhost:8080/employees
+	@GetMapping() // localhost:8080
 	public List<Employee> getEmployees(){
 		return employees;
 	}
