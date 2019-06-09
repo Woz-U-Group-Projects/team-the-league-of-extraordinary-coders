@@ -5,6 +5,10 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { CommonModule } from '@angular/common';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactsListComponent } from './contacts-list/contacts-list.component';
+import { ContactAddComponent } from './contact-add/contact-add.component';
+import { ContactEditComponent } from './contact-edit/contact-edit.component';
 
 const routes: Routes = [
   {
@@ -27,6 +31,22 @@ const routes: Routes = [
   {
     path: "employeeDetails/:id",
     component: EmployeeDetailComponent
+  },
+  {
+    path: "contactsList",
+    component: ContactsListComponent
+  },
+  {
+    path: "contactAdd",
+    component: ContactAddComponent
+  },
+  {
+    path: "contactEdit/:id",
+    component: ContactEditComponent
+  },
+  {
+    path: "contactDetails/:id",
+    component: ContactDetailComponent
   }
 ];
 
