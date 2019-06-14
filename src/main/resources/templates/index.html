@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<h1>LOEC!</h1>
+<div class="navbar"><h1>LOEC!</h1></div>
 
 <form action="#" th:action="@{/person}" th:object="${person}" method="post" >
 <input th:field="*{firstName}" placeholder="First Name" />
@@ -16,5 +16,9 @@
 </form>
 
 <p>This page is the root view served when visiting <a href="/" >localhost:8080/</a></p>
+
+
+
+<div class="footer"><h1>Thank you for visiting</h1></div>
 </body>
 </html>

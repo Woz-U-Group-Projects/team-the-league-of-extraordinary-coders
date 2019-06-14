@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(103, 221, 182);
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
