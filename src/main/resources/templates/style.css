@@ -1,5 +1,12 @@
+body,
+html {
+    min-height: 100%;
+}
+
 body {
-    background-color: rgb(103, 221, 182);
+    background-image: url("../img/paul-earle-39322-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 
@@ -9,6 +16,11 @@ body {
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     text-align: center;
+    left: 0,
+    
+
 }
