@@ -1,27 +1,39 @@
-package com.contact.models;
+package com.example.LOEC;
+
+import org.springframework.data.annotation.Id;
 
 public class Contacts {
-	private int contactId;
-	private String contactTitle;
-	private int contactEmployeeId;
 	
-	public int getContactId() {
-		return contactId;
+	@Id
+	private String id;
+	
+	private String contactName;
+	private String contactEmail;
+	private String contactPhone;
+	
+	public String getId() {
+		return id;
 	}
-	public void setAlbumId(int contactId) {
-		this.contactId = contactId;
+	public void setId(String id) {
+		this.id = id;
 	}
-	public String getContactTitle() {
-		return contactTitle;
+	public String getContactName() {
+		return contactName;
 	}
-	public void setContactTitle(String contactTitle) {
-		this.contactTitle = contactTitle;
+	public void setContactName(String cxname) {
+		this.contactName = cxname;
 	}
-	public int getcontactContactId() {
-		return contactEmployeeId;
+	public String getContactEmail() {
+		return contactEmail;
 	}
-	public void setcontactEmployeeId(int contactEmployeeId) {
-		this.contactEmployeeId = contactEmployeeId;
+	public void setContactEmail(String cxemail) {
+		this.contactEmail = cxemail;
+	}
+	public String getContactPhone() {
+		return contactPhone;
+	}
+	public void setContactPhone(String cxphone) {
+		this.contactPhone = cxphone;
 	}
 
 }
